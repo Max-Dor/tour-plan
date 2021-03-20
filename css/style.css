@@ -434,7 +434,7 @@ img {
   height: 100%;
   padding-left: 23px;
   padding-right: 75px;
-  background-color: #F5FaFe;
+  background-color: #F5FaFE;
   font-size: 12px;
   line-height: 15px;
   color: #333333;
@@ -449,6 +449,7 @@ img {
   height: 100%;
   border: none;
   background-color: #EC1F46;
+  cursor: pointer;
 }
 
 .user {
@@ -507,9 +508,20 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
-    max-width: 92%;
+    max-width: 700px;
+  }
+  .logo {
+    width: 110px;
+  }
+  .navbar-top {
+    padding-top: 29px;
+    padding-bottom: 29px;
+  }
+  .navbar-search {
+    margin-left: auto;
+    max-width: 300px;
   }
 }
 
@@ -518,7 +530,7 @@ img {
     width: 99px;
   }
   .container {
-    max-width: 92%;
+    max-width: 90%;
   }
   .navbar-top {
     padding-top: 28px;
@@ -554,12 +566,27 @@ img {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 567px) {
   .logo {
     width: 99px;
   }
   .container {
     max-width: 95%;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo {
+    width: 99px;
+  }
+  .container {
+    max-width: 280px;
   }
   .navbar-top {
     padding-top: 28px;
