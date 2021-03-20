@@ -383,6 +383,10 @@ img {
   margin-left: 108px;
 }
 
+.navbar-top__menu-button {
+  display: none;
+}
+
 .navbar-bottom {
   background-color: #0A223D;
 }
@@ -482,6 +486,9 @@ img {
   .container {
     max-width: 760px;
   }
+  .logo {
+    width: 132px;
+  }
   .navbar-top {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -504,13 +511,62 @@ img {
   .container {
     max-width: 92%;
   }
-  .navbar__search, .navbar__menu, .navbar__user {
+}
+
+@media (max-width: 630px) {
+  .logo {
+    width: 99px;
+  }
+  .container {
+    max-width: 92%;
+  }
+  .navbar-top {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+  .navbar-search, .navbar-menu, .navbar__user {
     display: none;
   }
-  .navbar-top__menu-button {
+  .menu-button {
+    width: 16px;
+    height: 11px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+  }
+  .menu-button__line {
+    width: 16px;
+    height: 1px;
+    background-color: #333333;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo {
+    width: 99px;
+  }
+  .container {
+    max-width: 95%;
+  }
+  .navbar-top {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+  .navbar-search, .navbar-menu, .navbar__user {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
