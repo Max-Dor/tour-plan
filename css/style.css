@@ -595,7 +595,7 @@ img {
     margin: 0;
   }
   .hotel-info__rating {
-    display: none;
+    display: content;
   }
   .stars {
     -ms-flex-preferred-size: auto;
