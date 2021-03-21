@@ -37,7 +37,7 @@
             margin-left: auto
             max-width: 300px
 
-@media ( max-width: 630px)
+@media ( max-width: 715px)
     .logo
         width: 99px
     .container
@@ -64,6 +64,27 @@
                 width: 16px 
                 height: 1px 
                 background-color: $text-color
+    .hotel
+        &-wrapper
+            justify-content: space-between
+        &-name
+            flex-basis: 100%
+        &-info
+            &__offer
+                order: -1
+                margin-left: 0
+            &__text
+                width: 100%
+            &__name
+                margin-top: 10px
+                margin-bottom: 0
+            &__description
+                margin: 0
+            &__rating
+                display: none
+    .stars 
+        flex-basis: auto
+
 
 @media ( max-width: 567px )
     .logo
