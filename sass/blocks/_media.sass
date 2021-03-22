@@ -81,9 +81,9 @@
             &__description
                 margin: 0
             &__rating
-                display: content
+                display: none
     .stars 
-        flex-basis: auto
+        flex-basis: content
 
 
 @media ( max-width: 567px )
@@ -95,6 +95,9 @@
 @media ( max-width: 400px )
     .container
         max-width: 95%
+    .hotel-info__description 
+        font-size: 12px 
+        line-height: 15px
 
 @media  ( max-width: 320px )
     .logo
@@ -107,4 +110,6 @@
             padding-bottom: 28px
         &-search, &-menu, &__user
             display: none
-
+    .hotel-info__description
+        font-size: 12px
+        line-height: 15px
