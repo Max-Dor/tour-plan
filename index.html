@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best Tour Plan</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet"> 
@@ -87,13 +88,36 @@
             <!-- /.hotel-info__left -->
             <div class=" rating hotel-info__rating">
                 <span class="rating__text">User Rattings</span>
-                <span class="rating__counter">4.5/<span class="rating-counter__five">5</span> </span>
+                <span class="rating__counter">4.5/<span class="rating_counter__five">5</span> </span>
             </div>
             <!-- /.hotel-info__right -->
             </div>
             <!-- /.hotel-info -->
+            <div class="hotel-grid">
+                <div class="slider">
+                    <!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+    <!-- Slides -->
+        <div class="swiper-slide"><img src="img/slide.jpg" alt="slide"></div>
+        <div class="swiper-slide"><img src="img/slide2.jpg" alt="slide"></div>
+        <div class="swiper-slide"><img src="img/slide3.jpg" alt="slide"></div>
+        <div class="swiper-slide"><img src="img/slide4.jpg" alt="slide"></div>
+        <div class="swiper-slide"><img src="img/slide5.jpg" alt="slide"></div>
+    ...
+    </div>
+    <!-- If we need navigation buttons -->
+    <button class="slider-button slider-button--prev"></button>
+    <button class="slider-button slider-button--next"></button>
+</div>
+<!--Swiper container-->
+                </div>
+            </div>
         </div>
         <!-- /.container -->
     </section>
+    <script src="JS/swiper-bundle.min.js"></script>
+    <script src="JS/main.js"></script>
 </body>
 </html>
