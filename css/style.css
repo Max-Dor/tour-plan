@@ -414,6 +414,7 @@ img {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 18px;
+  font-weight: 700;
 }
 
 .logo {
@@ -549,6 +550,8 @@ img {
 .hotel-descrition {
   font-size: 12px;
   line-height: 15px;
+  color: #333333;
+  font-weight: 400;
 }
 
 .stars {
@@ -640,6 +643,10 @@ img {
 .slider-button--prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
+}
+
+.swiper-slide {
+  width: 100%;
 }
 
 @media (max-width: 1200px) {
