@@ -11,7 +11,8 @@
                 object-fit: cover
 
 @media ( max-width: 992px )
-    .container
+    .container,
+    .newsletter-wrapper
         max-width: 760px
     .logo
         width: 132px
@@ -83,11 +84,18 @@
             font-weight: 600
             font-size  : 18px
             line-height: 25px
+    .newsletter
+        &-wrapper
+            max-width: 576px
+            width: 92%
+            flex-direction: column
+            align-items: flex-start
 
 @media ( max-width: 715px)
     .logo
         width: 99px
-    .container
+    .container,
+    .newsletter-wrapper
         max-width: 90%
     .navbar
         &-top
@@ -143,13 +151,14 @@
 @media ( max-width: 567px )
     .logo
         width: 99px
-    .container
+    .container,
+    .newsletter-wrapper
         max-width: 95%
     .slider
         height: 310px
 
 @media ( max-width: 400px )
-    .container
+    .container,
         max-width: 95%
     .hotel-info__description 
         font-size: 12px 
@@ -162,7 +171,10 @@
                 right: 10px
             &--prev
                 left: 10px
-                
+    .newsletter
+        &-subscribe
+            width: 280px
+            height: 55px
 @media  ( max-width: 320px )
     .logo
         width: 99px
