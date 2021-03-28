@@ -1029,6 +1029,15 @@ img {
   .slider {
     height: 250px;
   }
+  .slider-button {
+    height: 10px;
+  }
+  .slider-button--next {
+    right: 10px;
+  }
+  .slider-button--prev {
+    left: 10px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -1051,6 +1060,15 @@ img {
   }
   .slider {
     height: 179px;
+  }
+  .slider-button {
+    height: 10px;
+  }
+  .slider-button--next {
+    right: 10px;
+  }
+  .slider-button--prev {
+    left: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
