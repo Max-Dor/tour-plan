@@ -1169,9 +1169,6 @@ img {
     font-size: 18px;
     line-height: 25px;
   }
-  .newsletter {
-    margin-top: 390px;
-  }
   .newsletter-wrapper {
     width: 100%;
     -webkit-box-orient: horizontal;
@@ -1302,6 +1299,19 @@ img {
   .stars {
     -ms-flex-preferred-size: content;
         flex-basis: content;
+  }
+  .newsletter-wrapper {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .newsletter-title {
+    margin-left: 0;
   }
 }
 
