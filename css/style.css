@@ -469,7 +469,7 @@ img {
   height: 40px;
   border-radius: 50%;
   -o-object-fit: cover;
-     object-fit: cover;
+    object-fit: cover;
 }
 
 .user__name {
@@ -717,7 +717,7 @@ img {
 
 .hotel__image {
   -o-object-fit: cover;
-     object-fit: cover;
+    object-fit: cover;
 }
 
 .stars {
@@ -989,7 +989,7 @@ img {
   height: 90px;
   border-radius: 50%;
   -o-object-fit: cover;
-     object-fit: cover;
+    object-fit: cover;
   overflow: hidden;
 }
 
@@ -1036,7 +1036,7 @@ img {
     height: 100%;
     width: 100%;
     -o-object-fit: cover;
-       object-fit: cover;
+      object-fit: cover;
   }
   .hotel-promo {
     margin-left: 30px;
@@ -1109,7 +1109,7 @@ img {
     width: 340px;
     height: 210px;
   }
-  .reviews-slider__item {
+  .reviews-slider {
     max-width: 580px;
   }
 }
@@ -1134,7 +1134,7 @@ img {
     max-width: 300px;
   }
   .hotel {
-    height: 450px;
+    height: 100%;
   }
   .hotel__image {
     width: 100%;
@@ -1324,7 +1324,7 @@ img {
     max-width: 95%;
   }
   .slider {
-    height: 310px;
+    height: 100%;
   }
 }
 
@@ -1334,7 +1334,7 @@ img {
     max-width: 95%;
   }
   .hotel {
-    height: 250px;
+    height: 100%;
   }
   .hotel-info__description {
     font-size: 12px;
@@ -1393,8 +1393,18 @@ img {
   .hotel-info__description-button--prev {
     left: 10px;
   }
+  .newsletter-title {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter-title__strong {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+  }
   .reviwes__title {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 18px;
     line-height: 23px;
     text-align: center;
