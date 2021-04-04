@@ -146,6 +146,11 @@
                     right: 50%
                     transform: translate( 50%,0)
                     margin-right: -65px
+        &__title 
+            font-weight: bold 
+            font-size: 30px 
+            line-height: 38px
+
 
 
 @media ( max-width: 715px)
@@ -239,16 +244,34 @@
                 line-height: 15px
         &-slider
         height: 100%
+        &__slider
+            margin-bottom: 20px
         &-button
             height: 10px
             &--next
                 right: 10px
             &--prev
                 left: 10px
+    .booking
+        margin-bottom: 20px
     .newsletter
         &-subscribe
             width: 280px
             height: 55px
+    .stars
+        flex-basis: 21%
+    .reviews 
+        &__title 
+            font-weight: bold 
+            font-size: 18px 
+            line-height: 23px
+            tex-align: center 
+            text-transform: uppercase 
+        &-slider 
+            &__rating 
+                margin-bottom: 33px 
+            &__text 
+                text-align: left
     .card
         flex-direction: column
         width: 100%
@@ -291,15 +314,3 @@
                 font-weight: 600
                 font-size: 30px
                 line-height: 38px
-    .reviews 
-        padding: 40px 38px
-        &__title 
-            font-weight: bold 
-            font-size: 18px 
-            line-height: 23px 
-            text-align: center 
-            text-transform: uppercase 
-        &__text
-            font-weight: normal
-            font-size: 12px
-            line-height: 160%

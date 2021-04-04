@@ -548,6 +548,7 @@ img {
   font-weight: 300;
   font-size: 24px;
   line-height: 30px;
+  margin: 0;
 }
 
 .newsletter-title__strong {
@@ -587,6 +588,10 @@ img {
   border: none;
   background-color: #EC1F46;
   color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  cursor: pointer;
 }
 
 .hotel {
@@ -604,7 +609,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .hotel-info__offer {
@@ -900,6 +905,7 @@ img {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 70px;
 }
 
@@ -919,7 +925,7 @@ img {
   margin: 45px auto 0;
   background-color: #fff;
   border-radius: 8px;
-  padding: 0 62px 30px;
+  padding: 0 97px 30px;
 }
 
 .reviews-slider__item::before {
@@ -960,12 +966,12 @@ img {
 }
 
 .reviews-slider__button--prev {
-  background-image: url(../img/arrow-next-secondary.svg);
+  background-image: url(../img/arrow-next-secondary.png);
   left: 0;
 }
 
 .reviews-slider__button--next {
-  background-image: url(../img/arrow-prev-secondary.svg);
+  background-image: url(../img/arrow-prev-secondary.png);
   right: 0;
 }
 
@@ -1023,6 +1029,7 @@ img {
   line-height: 160%;
   text-align: justify;
   margin: auto;
+  overflow: auto;
 }
 
 .activities {
@@ -1311,6 +1318,11 @@ img {
             transform: translate(50%, 0);
     margin-right: -65px;
   }
+  .reviews__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 38px;
+  }
 }
 
 @media (max-width: 715px) {
@@ -1447,6 +1459,9 @@ img {
     font-size: 12px;
     line-height: 15px;
   }
+  .hotel__slider {
+    margin-bottom: 20px;
+  }
   .hotel-button {
     height: 10px;
   }
@@ -1456,9 +1471,29 @@ img {
   .hotel-button--prev {
     left: 10px;
   }
+  .booking {
+    margin-bottom: 20px;
+  }
   .newsletter-subscribe {
     width: 280px;
     height: 55px;
+  }
+  .stars {
+    -ms-flex-preferred-size: 21%;
+        flex-basis: 21%;
+  }
+  .reviews__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    tex-align: center;
+    text-transform: uppercase;
+  }
+  .reviews-slider__rating {
+    margin-bottom: 33px;
+  }
+  .reviews-slider__text {
+    text-align: left;
   }
   .card {
     -webkit-box-orient: vertical;
@@ -1516,21 +1551,6 @@ img {
     font-weight: 600;
     font-size: 30px;
     line-height: 38px;
-  }
-  .reviews {
-    padding: 40px 38px;
-  }
-  .reviews__title {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 23px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-  .reviews__text {
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 160%;
   }
 }
 /*# sourceMappingURL=style.css.map */
