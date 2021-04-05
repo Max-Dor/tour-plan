@@ -1209,6 +1209,9 @@ img {
     height: 210px;
   }
   .reviews-slider {
+    width: 100%;
+  }
+  .reviews__item {
     max-width: 580px;
   }
   .activities-wrapper {
@@ -1298,25 +1301,38 @@ img {
     margin-right: 34px;
   }
   .reviews-slider__item {
-    padding: 0 30px 30px;
+    max-width: 580px;
+    min-height: 300px;
+    padding: 33px 62px 30px 62px;
   }
-  .reviews-slider__item::after, .reviews-slider__item::before {
+  .reviews-slider__item::before, .reviews-slider__item::after {
     display: none;
   }
-  .reviews-slider__button {
-    top: 32px;
+  .reviews-slider__profile {
+    margin-top: -75px;
   }
-  .reviews-slider__button--prev {
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    margin-left: -65px;
+  .reviews__button {
+    position: absolute;
+    top: 57%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+    border: none;
+    background-color: transparant;
+    cursor: pointer;
+    z-index: 99;
   }
-  .reviews-slider__button--next {
-    right: 50%;
-    -webkit-transform: translate(50%, 0);
-            transform: translate(50%, 0);
-    margin-right: -65px;
+  .reviews__button--prev {
+    background-image: url(../img/arrow-next-secondary.png);
+    left: 0;
+  }
+  .reviews__button--next {
+    background-image: url(../img/arrow-prev-secondary.png);
+    right: 0;
   }
   .reviews__title {
     font-weight: bold;
@@ -1489,6 +1505,19 @@ img {
     tex-align: center;
     text-transform: uppercase;
   }
+  .reviews-slider__button {
+    top: 45px;
+  }
+  .reviews-slider__button--prev {
+    left: 50%;
+    margin-left: -75px;
+    ransform: translate(-50%, 0);
+  }
+  .reviews-slider__button--next {
+    right: 50%;
+    margin-right: -75px;
+    ransform: translate(50%, 0);
+  }
   .reviews-slider__rating {
     margin-bottom: 33px;
   }
@@ -1551,6 +1580,34 @@ img {
     font-weight: 600;
     font-size: 30px;
     line-height: 38px;
+  }
+  .reviews__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .reviews-slider__rating {
+    margin-bottom: 31px;
+  }
+  .reviews-slider__text {
+    text-align: left;
+  }
+  .reviews__button {
+    top: 30px;
+  }
+  .reviews__button--prev {
+    left: 50px;
+    margin-left: 85px;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .reviews__button--next {
+    right: 50%;
+    margin-right: -65px;
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
   }
 }
 /*# sourceMappingURL=style.css.map */

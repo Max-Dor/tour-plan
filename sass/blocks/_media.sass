@@ -63,7 +63,8 @@
         height: 210px
     .reviews
         &-slider
-            &__item
+            width: 100%
+        &__item
             max-width: 580px
     .activities
         &-wrapper
@@ -133,19 +134,32 @@
     .reviews 
         &-slider 
             &__item 
-                padding: 0 30px 30px
-                &::after,&::before
-                    display: none
-            &__button
-                top: 32px
-                &--prev
-                    left: 50%
-                    transform: translate(-50%,0)
-                    margin-left: -65px
-                &--next
-                    right: 50%
-                    transform: translate( 50%,0)
-                    margin-right: -65px
+                max-width: 580px
+                min-height: 300px 
+                padding: 33px 62px 30px 62px
+                &::before,&::after 
+                    display: none 
+            &__profile 
+                margin-top: -75px 
+        &__button 
+            position: absolute 
+            top: 57% 
+            transform: translateY(-50%) 
+            width: 30px 
+            height: 30px 
+            background-repeat: no-repeat 
+            background-size: 10px 
+            background-position: center 
+            border: none 
+            background-color: transparant 
+            cursor: pointer 
+            z-index: 99 
+            &--prev 
+                background-image: url(../img/arrow-next-secondary.png) 
+                left: 0 
+            &--next 
+                background-image: url(../img/arrow-prev-secondary.png) 
+                right: 0
         &__title 
             font-weight: bold 
             font-size: 30px 
@@ -268,6 +282,16 @@
             tex-align: center 
             text-transform: uppercase 
         &-slider 
+            &__button 
+                top: 45px 
+                &--prev 
+                    left: 50% 
+                    margin-left: -75px 
+                    ransform: translate(-50%, 0) 
+                &--next 
+                    right: 50% 
+                    margin-right: -75px 
+                    ransform: translate(50%, 0)
             &__rating 
                 margin-bottom: 33px 
             &__text 
@@ -314,3 +338,25 @@
                 font-weight: 600
                 font-size: 30px
                 line-height: 38px
+    .reviews 
+        &__title 
+            font-weight: bold 
+            font-size: 18px 
+            line-height: 23px 
+            text-align: center 
+            text-transform: uppercase
+        &-slider 
+            &__rating 
+                margin-bottom: 31px 
+            &__text 
+                text-align: left 
+        &__button 
+            top: 30px 
+            &--prev 
+                left: 50px 
+                margin-left: 85px 
+                transform: translate(-50%, 0) 
+            &--next 
+                right: 50% 
+                margin-right: -65px 
+                transform: translate(50%, 0)
