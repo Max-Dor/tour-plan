@@ -299,6 +299,33 @@
     .card
         flex-direction: column
         width: 100%
+        &__title-1 
+            max-width: 145px 
+        &__title-2 
+            max-width: 153px 
+        &__title-3 
+            max-width: 161px 
+        &__title-4 
+            max-width: 200px 
+    .activities 
+        &__title 
+            font-family: Mulish 
+            font-weight: bold 
+            font-size: 16px 
+            line-height: 20px 
+        &-wrapper 
+            display: flex
+            flex-flow: wrap 
+    .card-1,.card-2,.card-3,.card-4 
+        width: 100% 
+    .card-1 
+        order: 1 
+    .card-2 
+        order: 3 
+    .card-3 
+        order: 2 
+    .card-4 
+        order: 4
 
 @media  ( max-width: 320px )
     .logo
@@ -349,7 +376,9 @@
             &__rating 
                 margin-bottom: 31px 
             &__text 
-                text-align: left 
+                width: 219px
+                text-align: left  
+                margin: 0
         &__button 
             top: 30px 
             &--prev 
