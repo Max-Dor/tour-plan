@@ -120,6 +120,11 @@
         &-slide
             width: 100%
     .navbar
+        &--mobile
+            &_fixed
+                left: 0
+                top: 0
+                right: 0
         &-top 
             padding-top: 29px
             padding-bottom: 29px
@@ -323,9 +328,6 @@
                 grid-row: 7
         &__message
             margin-bottom: 45px
-        &__ini
-        &__pay
-            
 
 
 @media ( max-width: 400px )
@@ -407,6 +409,26 @@
         order: 2 
     .card-4 
         order: 4
+    .footer
+        &-wrapper
+            position: relative
+        &__info
+            position: absolute
+            z-index: 99
+            left: 0px
+            bottom: 65px
+        &__ini
+            flex-flow: column
+        &__disclaimer
+            width: 100%
+        &__item
+                font-weight: normal
+                font-size: 12px
+                line-height: 15px
+        &__pay
+            margin-top: 10px
+            margin-right: 151px
+
 
 @media  ( max-width: 320px )
     .logo
