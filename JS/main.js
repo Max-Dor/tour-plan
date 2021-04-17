@@ -26,3 +26,9 @@ const reviewSlider = new Swiper('.reviews-slider', {
     onlyInViewport: false,
   },
 });
+// Управление менюшкой в мобильной версии//
+var menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener('click', function (){
+  console.log('Клик по кнопке');
+  document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--visible");
+});
