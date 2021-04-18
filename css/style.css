@@ -2063,13 +2063,6 @@ img {
   .hotel-slider__item {
     height: 179px;
   }
-  .navbar-top {
-    padding-top: 28px;
-    padding-bottom: 28px;
-  }
-  .navbar-search, .navbar-menu, .navbar__user {
-    display: none;
-  }
   .hotel-info__description {
     font-size: 12px;
     line-height: 15px;
@@ -2158,6 +2151,10 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-top: 31px;
+  }
+  .navbar-search {
+    margin-bottom: 39px;
   }
   .user__name {
     color: #fff;
@@ -2166,6 +2163,7 @@ img {
   }
   .user__name--light {
     margin-top: 10px;
+    margin-bottom: 27px;
   }
 }
 /*# sourceMappingURL=style.css.map */

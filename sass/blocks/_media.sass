@@ -489,12 +489,6 @@
             height: 179px
             &__item
                 height: 179px
-    .navbar
-        &-top
-            padding-top: 28px
-            padding-bottom: 28px
-        &-search, &-menu, &__user
-            display: none
     .hotel-info__description
         font-size: 12px
         line-height: 15px
@@ -543,7 +537,7 @@
         &-top 
             padding-top: 28px
             padding-bottom: 28px 
-        &__user,&-search 
+        &__user, &-search 
             &--mobile 
                 &_hidden 
                     display: none 
@@ -563,10 +557,14 @@
         &__user 
             flex-direction: column
             justify-content: center
+            margin-top: 31px
+        &-search
+            margin-bottom: 39px
     .user 
         &__name 
             color: $light 
             margin-left: 0 
             argin-top: 10px 
             &--light 
-                margin-top: 10px
+                margin-top: 10px 
+                margin-bottom: 27px
