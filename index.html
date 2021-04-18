@@ -18,13 +18,13 @@
             <a href="#" class="logo">
                 <img src="img/horizontal-logo.svg" alt="Logo:Best tour plan" class="logo-img">
             </a>
-            <form action="#" class="search navbar-search">
+            <form action="#" class="search navbar-search navbar-search--mobile_hidden">
                 <input type="text" class="search-input" placeholder="Search Location">
                 <button class="search-button">
                     <img src="img/search.svg" alt="icon:search">
                 </button>
             </form>
-            <a href="#" class="user navbar__user">
+            <a href="#" class="user navbar__user navbar__user--mobile_hidden">
                 <img src="img/user-avatar.jpg" alt="Avatar:Nathan" class="user__avatar">
                 <span class="user__name">Nathan</span>
             </a>
@@ -41,6 +41,20 @@
         <nav class="navbar-bottom">
             <div class="container">
             <ul class="navbar-menu">
+            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+                <a href="#" class="user navbar__user navbar__user--mobile_visible">
+                <img src="img/user-avatar.jpg" alt="Avatar:Nathan" class="user__avatar">
+                <span class="user__name user__name--light">Nathan</span>
+            </a>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item--mobile_visible">
+                <form action="#" class="search navbar-search">
+                <input type="text" class="search-input" placeholder="Search Location">
+                <button class="search-button">
+                <img src="img/search.svg" alt="icon:search">
+                </button>
+            </form>
+            </li>
             <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">All Deals</a></li>
             <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Hotels</a></li>
             <li class="navbar-menu__item"><a href="#" class="navbar-menu__link">Activities</a></li>
