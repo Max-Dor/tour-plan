@@ -174,8 +174,8 @@
                 subscribe to our
                 <span class="newsletter-title__strong" >Newsletter</span>
             </h2>
-            <form action="#" class="subscribe newsletter-subscribe">
-                <input type="text" class="subscribe__input" placeholder="Your email address">
+            <form action="send.php" method="POST" class="subscribe newsletter-subscribe">
+                <input type="text" class="subscribe__input" placeholder="Your email address" name="email">
                 <button class="subscribe__button">Send</button>
             </form>
         </div>
@@ -297,7 +297,6 @@
         </div>
         <!-- /.container -->
     </section>
-
     <footer class="footer">
         <div class="container">
             <div class="footer-wrapper">
@@ -375,10 +374,10 @@
                 <!--Contact-details-->
                 <div class="footer__contact-form">
                     <h3 class="footer__title">Send us a message</h3>
-                    <form action="#" class="footer__form">
-                        <input type="text" class="input footer__input" placeholder="Your Full Name*">
-                        <input type="text" class="input footer__input" placeholder="Phone Number*">
-                        <textarea  class="footer__message"  cols="30" rows="10" placeholder="Message"></textarea>
+                    <form action="send.php" method="POST" class="footer__form">
+                        <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
+                        <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+                        <textarea  class="footer__message"  cols="30" rows="10" placeholder="Message" name="message"></textarea>
                         <button class="button footer__button" type="submit">Send</button>
                         <span class="footer__info">* Required Fields</span>
                     </form>
@@ -398,6 +397,27 @@
         </div>
         <!--Container-->
     </footer>|
+    <div class="modal">
+        <div class="modal__overlay">
+            
+        </div>
+        <!-- /.modal__overlay -->
+        <div class="modal__dialog">
+            <a href="#" class="modal__close">
+                <img src="img/close.svg" alt="icon:close">
+            </a>
+            <h3 class="footer__title">Send us a message</h3>
+            <form action="send.php" method="POST" class="footer__form">
+                <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name">
+                <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone">
+                <textarea  class="footer__message"  cols="30" rows="10" placeholder="Message" name="message"></textarea>
+                <button class="button footer__button" type="submit">Send</button>
+                <span class="footer__info">* Required Fields</span>
+            </form>
+        </div>
+        <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
     <script src="JS/swiper-bundle.min.js"></script>
     <script src="JS/main.js"></script>
 </body>
