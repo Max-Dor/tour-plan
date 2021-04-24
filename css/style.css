@@ -1444,6 +1444,24 @@ img {
   text-align: center;
 }
 
+.modal__button {
+  padding: 18px 65px;
+}
+
+.modal__down-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
 @media (max-width: 1200px) {
   .container {
     width: 960px;
@@ -1624,6 +1642,11 @@ img {
     line-height: 23px;
     margin-bottom: 5px;
   }
+  .modal__dialog {
+    width: 100%;
+    padding-right: 70px;
+    padding-left: 70px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1747,6 +1770,14 @@ img {
     font-weight: bold;
     font-size: 30px;
     line-height: 38px;
+  }
+  .modal__dialog {
+    width: 100%;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .modal__button {
+    padding: 8px 30px;
   }
 }
 
@@ -2142,8 +2173,8 @@ img {
   }
   .modal__dialog {
     width: 100%;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
   .modal__button {
     padding: 8px 30px;

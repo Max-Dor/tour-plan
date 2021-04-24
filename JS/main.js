@@ -53,4 +53,5 @@ function closeModal(event) {
   modalDialog.removeClass("modal__dialog--visible");
 }
 
+
 });
