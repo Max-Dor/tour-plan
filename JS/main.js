@@ -52,6 +52,11 @@ function closeModal(event) {
   modalOverlay.removeClass("modal__overlay--visible");
   modalDialog.removeClass("modal__dialog--visible");
 }
+$(this).keydown(function(eventObject){
+if (eventObject.which == 27)
+$('.modal__overlay').hide();
+$('.modal__dialog').hide();
+});
 
 
 });
